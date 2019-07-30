@@ -1,0 +1,30 @@
+type Movie {
+  slug: ID
+  releaseDate: Date
+  title: String
+  originalTitle: String
+  originalLang: String
+  overview: String
+  posterPath(size: POSTER_SIZES = ORIGINAL): String
+  backdropPath(size: BACKDROP_SIZES = ORIGINAL): String
+  isAdult: Boolean
+  popularity: Float
+  voteCount: Int
+  voteAverage: Float
+}
+
+type MovieWithPagination {
+  pageInfo: PageInfo!
+  items: [Movie]
+}
+
+enum MOVIE_SORTED_BY {
+  POPULAR
+  TOP_RATED 
+  UPCOMING
+  NOW_PLAYING
+}
+
+type Query {
+  movies(page: Int = 1, sortedBy: MOVIE_SORTED_BY = POPULAR): MovieWithPagination
+}

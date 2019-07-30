@@ -1,0 +1,5 @@
+type PageInfo {
+    total: Int!
+    currentPage: Int!
+    numberOfItems: Int!
+}

@@ -1,0 +1,35 @@
+enum POSTER_SIZES {
+  W92
+  W154
+  W185
+  W342
+  W500
+  W780
+  ORIGINAL
+}
+
+enum BACKDROP_SIZES {
+  W300
+  W780
+  W1280
+  ORIGINAL
+}
+
+type Language {
+  code: String
+  name: String
+  nativeName: String
+}
+
+type Country {
+  code: String
+  name: String
+  nativeName: String
+  currency: String
+  languages: [Language]
+}
+
+type Query {
+  languages: [Language]
+  countries: [Country]
+}

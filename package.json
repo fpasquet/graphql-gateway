@@ -1,0 +1,25 @@
+{
+  "name": "graphql-gateway",
+  "description": "",
+  "dependencies": {
+    "apollo-datasource-rest": "^0.6.1",
+    "apollo-server": "2.7.0",
+    "apollo-server-plugin-response-cache": "^0.3.1",
+    "countries-list": "^2.4.3",
+    "graphql": "14.4.2",
+    "graphql-toolkit": "0.4.1",
+    "graphql-tools": "^4.0.5",
+    "i18n-iso-countries": "^4.2.1",
+    "lodash": "^4.17.15"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch src -e js,graphql src/index.js localhost 4000"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "@types/graphql": "14.0.1",
+    "nodemon": "1.18.4"
+  }
+}
