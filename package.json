@@ -3,7 +3,7 @@
   "description": "",
   "dependencies": {
     "apollo-datasource-rest": "^0.6.1",
-    "apollo-server": "2.7.0",
+    "apollo-server": "2.14.2",
     "apollo-server-plugin-response-cache": "^0.3.1",
     "countries-list": "^2.4.3",
     "graphql": "14.4.2",
