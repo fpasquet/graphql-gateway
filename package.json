@@ -10,7 +10,7 @@
     "graphql-toolkit": "0.4.1",
     "graphql-tools": "^4.0.5",
     "i18n-iso-countries": "^4.2.1",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.19"
   },
   "license": "MIT",
   "main": "index.js",
